@@ -7,6 +7,14 @@ data = {'Name': ['Alice', 'Bob', 'Charlie'],
         }
 df = pd.DataFrame(data)
 
+# Adding new row to df for v2
+new_row = {'Name': 'GF1', 'Age': 20, 'City': 'Sedney'}
+df.loc[len(df.index)] = new_row
+
+# # Adding new row to df for v2
+# new_row2 = {'Name': 'GF2', 'Age': 25, 'City': 'Landon'}
+# df.loc[len(df.index)] = new_row2
+
 data_dir = 'data'
 os.makedirs(data_dir, exist_ok=True)
 
